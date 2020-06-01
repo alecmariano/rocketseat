@@ -1,0 +1,6 @@
+INICIANDO UM APP REACT
+
+1- Criar projeto
+    -Utilizar o comando "npx create-react-app web --template=typescript".
+    -O parametro "web" refere-se ao nome dado ao projeto.
+    -O parametro "--template=typescript" refere-se ao template utilizado para inicializar o projeto.

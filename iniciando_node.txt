@@ -1,0 +1,26 @@
+INICIALIZANDO UM AMBIENTE NODE.JS
+
+1- Criar um diretório de servidor
+    -No caso do NLW#1, foi criado o diretório "server" via mkdir.
+
+2- Inicializar o Node no diretório
+    -Utilizar o comando "npm init -y".
+    -São criados alguns arquivos JSON para controle de dependências do projeto.
+    -O parâmetro "-y" no comando responde Sim para todas as perguntas de instalação.
+
+3- Instalando pacotes
+    -Comando "npm install express", para instalação do express.
+    -Para express com TypeScript, instalar o pacote "npm install @types/express -D".
+    -Ainda para TypeScript com Node, instalar o pacote "npm install typescript -D".
+    -Ainda para TypeScript com Node, instalar o pacote "npm install ts-node -D".
+    -Ainda para TypeScript com Node, instalar o pacote "npm install ts-node-dev -D", para hot reload dos arquivos.
+
+4- Inicializar o TypeScript
+    -Utilizar o comando "npx tsc --init" para criação do arquivo de configuração do TypeScript.
+
+5- Executar o servidor
+    -Utilizar o comando "npx ts-node-dev .\src\server.ts". O caminho é relativo.
+    -Como alternativa ao comando acima, altere o arquivo package.json do diretório raiz do projeto.
+    -Altere na conjunto "scripts", a chave "test" (padrão) para "dev" e o valor da chave para a execução do arquivo.
+    -No caso do projeto inicial, o valor da chave foi alterado para "ts-node-dev ./src/server.ts".
+    -Finalmente, utilizar o comando "npm run dev" para executar o servidor do nosso projeto com hot reload.
