@@ -1,0 +1,22 @@
+Rota: Endereço completo da requisição.
+Recurso: Entidade no sistema.
+
+O Router desacopla as rotas do arquivo principal do server.
+    const routes = express.Router();
+
+***MÉTODOS HTTP***
+GET: Buscar informação no backend.
+POST: Criar informação no backend.
+PUT: Atualizar informação no backend.
+DELETE: Remover informação no backend.
+
+request.params: Parâmetro recebido na rota que identifica um recurso.
+request.query: Parâmetro opcional que vem na rota para buscas e paginação.
+request.body: Parâmetro para criação/atualização de informações.
+
+Utilizando o construtor String para garantir que o valor filtrado seja uma string.
+    const search = String(request.query.search);
+
+Utilizando operador ternário para verificar se a variável "search" está vindo vazia.
+    const filteredUsers = search ? users.filter(user => user.includes(search)) : users;
+
