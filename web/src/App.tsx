@@ -1,15 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Routes from './routes';
 
 function App() {
+ // const [count, setCounter] = useState(0);Retona um array: [valor do estado, função pra atualizar o valor do estado]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Teste de Live Reload</h1>
-      </header>
-    </div>
+      <Routes />
   );
 }
 
